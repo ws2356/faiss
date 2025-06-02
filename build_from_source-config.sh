@@ -22,4 +22,5 @@ cmake \
 -DPython_INCLUDE_DIR=$CONDA_PREFIX/include/python$CONDA_PYTHON_VERSION \
 -DPython_LIBRARY=$CONDA_PREFIX/lib/libpython$CONDA_PYTHON_VERSION.dylib \
 -DPython_ROOT_DIR=$CONDA_PREFIX \
+-DCMAKE_SHARED_LINKER_FLAGS="-undefined dynamic_lookup" \
 -B build .
